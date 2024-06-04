@@ -1,0 +1,22 @@
+git config --global user.name user8829
+git config --global user.email forgress98@gmail.com
+
+git config --global user.name CUJeong
+
+git config --global user.email akow283@gmail.com
+
+git config --global core.autocrlf true
+
+git remote set-url origin https://user8829@github.com/user8829/htmlstudy.git
+
+git remote set-url origin https://github.com/user8829/htmlstudy.git
+
+여기서 CUJeong 부분을 각자 자신의 GitHub 닉네임으로 변경해서 터미널에 한줄씩 실행하시면 됩니다.
+
+https://github.com/user8829/htmlstudy.git <- 이 부분은 본인의 깃허브 레포지토리 주소를 복사해서 반영해주세요
+
+git add *
+
+git commit -m "commit"
+
+git push

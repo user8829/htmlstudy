@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* CSS의 선택자 */
+        /* 모든 태그에 style 적용 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 모든 div 태그에 style 적용 */
+        div{
+            border: 2px dotted blue;
+            height: 50px;
+        }
+
+        /* 클래스명으로 style 적용 */
+        .bg-naver{
+            background-color: #03C75A;
+        
+        }
+        /* id명으로 style을 적용 */
+        /* class 속성과  id속성은 모든 태그에 존재*/
+        #choco{
+            background-color: chocolate;
+        }
+        .big{
+            width: 100;
+            height: 60px;
+        } 
+        /* type 속성이 text인 input 태그에 대해 style 적용 */
+        input[type=text]{
+            font-size: 20px;
+        }
+
+        .box{
+            border: 2px solid black;
+            height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>여백이 제거됨</p>
+    <h1>야 나두!</h1>
+    <div></div>
+    <div class="bg-naver"></div>
+    <!-- id 속성의 값은 하나의 html 문서 내에서 태그마다 고유(중복x)하게 부여함 -->
+    <div id="choco"></div>
+
+    <input type="text">
+    <input class="big" type="password">
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    
+</body>
+</html>

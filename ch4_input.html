@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 텍스트 입력받는 태그 -->
+    <input type="text">
+    <input type="text" placeholder="아이디 입력">
+
+    <!-- 사용자의 클릭을 입력받는 태그 (버튼) -->
+    <input type="button" value="중복확인">
+
+    <!-- 버튼은 따로 태그가 존재한다. -->
+    <!-- 이클립스 키세팅 적용 (extension 에서 eclipse keymap 설치) -->
+    <!-- 라인삭제 Ctrl+D -->
+    <!-- 라인복사 Ctrl+Alt+방향키 아래 -->
+    <button>중복확인</button>
+    <!-- 버튼 안에 아이콘 넣기 -->
+    <!-- https://primer.style/foundations/icons -->
+    <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.834.066c.763.087 1.5.295 2.01.884.505.581.656 1.378.656 2.3 0 .467-.087 1.119-.157 1.637L11.328 5h1.422c.603 0 1.174.085 1.668.333.508.254.911.679 1.137 1.2.453.998.438 2.447.188 4.316l-.04.306c-.105.79-.195 1.473-.313 2.033-.131.63-.315 1.209-.668 1.672C13.97 15.847 12.706 16 11 16c-1.848 0-3.234-.333-4.388-.653-.165-.045-.323-.09-.475-.133-.658-.186-1.2-.34-1.725-.415A1.75 1.75 0 0 1 2.75 16h-1A1.75 1.75 0 0 1 0 14.25v-7.5C0 5.784.784 5 1.75 5h1a1.75 1.75 0 0 1 1.514.872c.258-.105.59-.268.918-.508C5.853 4.874 6.5 4.079 6.5 2.75v-.5c0-1.202.994-2.337 2.334-2.184ZM4.5 13.3c.705.088 1.39.284 2.072.478l.441.125c1.096.305 2.334.598 3.987.598 1.794 0 2.28-.223 2.528-.549.147-.193.276-.505.394-1.07.105-.502.188-1.124.295-1.93l.04-.3c.25-1.882.189-2.933-.068-3.497a.921.921 0 0 0-.442-.48c-.208-.104-.52-.174-.997-.174H11c-.686 0-1.295-.577-1.206-1.336.023-.192.05-.39.076-.586.065-.488.13-.97.13-1.328 0-.809-.144-1.15-.288-1.316-.137-.158-.402-.304-1.048-.378C8.357 1.521 8 1.793 8 2.25v.5c0 1.922-.978 3.128-1.933 3.825a5.831 5.831 0 0 1-1.567.81ZM2.75 6.5h-1a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h1a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg></button>
+
+    <!-- 화면에 줄바꿈 넣음-->
+    <br><br><br><br><br><br><br>
+
+    <!-- 화면에 줄 넣음 (한줄 다 차지함)-->
+    <hr>
+
+    
+    <!-- 파일 입력 받기 -->
+    <input type="file">
+    <input type="file" name=" " id=" ">
+    <hr>
+
+    <!-- 설문지 느낌으로 사용자에게 보기를 제공한 후 사용자의 선택을 입력받음 -->
+    <!-- 라디오 버튼 -->
+    <!-- name을 이용하여 라디오 버튼을 묶어줄수 있다.-->
+    <!-- cheked 속성을 넣으면 미리 체크가 되어있게 만든다. -->
+    <!-- label 태그를 이용하면 텍스트 선택시 input 태그가 선택되도록 할 수 있다. -->
+    <!-- input 태그의 id와 label 태그의 for 값을 일치시키기 -->
+    <input type="radio" name="gender" id="male" checked="checked">
+    <label for="male">남자</label>
+    <br>
+    <input type="radio" name="gender" id="female">
+    <label for="female">여자</label>
+    <br>
+    <input type="radio" name="gender" id="">
+    중성
+        
+    <hr>
+
+    <!-- 체크박스  -->
+    <!-- 체크박스는 중복선택을 입력받거나, 선택하지 않아도 되는 항목에 사용 -->
+    사이트 방문 사유
+    <br>
+    <input type="checkbox" name="" id="search">
+    <label for="search">검색</label>
+    <input type="checkbox" name="" id="">지인
+    <input type="checkbox" name="" id="">광고
+
+    <hr>
+    <!-- 셀렉트 박스  -->
+    비밀번호 힌트
+    <br>
+    <select name="" id="">\
+        <option value="">========선택========</option>
+        <option value="">내가 다닌 초등학교 이름은?</option>
+        <option value="">내가 보물 1호는?</option>
+        <option value="">내 학창시절 별명은?</option>
+
+    </select>
+
+    
+    <hr>
+
+    <!-- 텍스트를 여러줄 입력받기 -->
+    자기소개 작성
+    <br>
+    <textarea name="" id=""></textarea>
+
+    <hr>
+
+    테마 색 선택
+    <br>
+    <input type="color" name="" id="">
+
+    <hr>
+    <!-- 날짜 입력받기 -->
+    대학교 졸업일자
+    
+    <br>
+    <input type="date">
+    <hr>
+
+    
+
+    <!-- 숫자 입력받기-->
+    나이 <input type="number" name="" id="">
+    <hr>
+
+    <!-- 음량 조절 같은 겅우 -->
+    <input type="range" name="" id="">
+    <input type="range" min="0" max="100">
+    <input type="range" min="0" max="100" step="10">
+    <hr>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

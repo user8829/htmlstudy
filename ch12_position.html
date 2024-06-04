@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner{
+            border: 2px solid red;
+            position: relative;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .text{
+            /* 해당태그가 z축 방향으로 뜸 */
+            /* 해당태그의 부모가 position: relative 여야 정상 동작*/
+            position: absolute;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            
+            /* 부모의 기준으로 좌측 상단 모서리 위치 조정 */
+            top: 50px;
+            left: 50px;
+        }
+        .right{
+            position: absolute;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            /* 부모의 기준으로 좌측 상단 모서리 위치 조정 */
+            bottom: 50px;
+            right: 50px;
+
+        }
+        .center{
+            position: absolute;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            /* 부모의 기준으로 좌측 상단 모서리 위치 조정 */
+            top: 50%;  /* 부모 높이의 절반에 해당 */
+            left: 50%; /* 부모 높이의 절반에 해당 */
+            /* 여기서 50%는 본인태그의 너비와 높이의 절반에 해당 */
+            transform: translate(-50%,-50%);
+        }
+        .navigation{
+            /* 브라우저 창에서 고정된 위치에 놓음 */
+            position: fixed;
+
+            /* 브라우저 창 기준 상단에 위치시킴 */
+            top: 0;
+
+            background-color: white;
+            /* width 설정해주기 */
+            width: 100%;
+
+            }
+        .quick{
+            position: fixed;
+            background-color: white;
+            right: 0;
+            top:50%;
+            transform: translate(0,-50%);
+        }
+        .quick > div{
+            cursor: pointer;
+        }
+
+        /* div에 마우스 커서를 올렸을 때에만 style 적용하기 */
+
+        .quick > div:hover{
+            background-color: rgb(153, 255, 0);
+            color: white;
+        }
+
+        .top-button{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: aqua;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 기본적으로 태그영역은 서로 겹치지 않는다. -->
+    <div class="banner">
+        <img src="./resources/images/backgroundimg.jpg" alt="" width="100%">
+        <span class="text">아름다운 꽃동산</span>
+    </div>
+    <div class="banner">
+        <img src="./resources/images/backgroundimg.jpg" alt="" width="100%">
+        <span class="right">아름다운 꽃동산</span>
+    </div>
+    <div class="banner">
+        <img src="./resources/images/backgroundimg.jpg" alt="" width="100%">
+        <span class="center">아름다운 꽃동산</span>
+    </div>
+    <div class="navigation"> 
+        <h1>네비게이션 바</h1>      
+    </div>
+   
+    
+    <div class="quick">
+        <div>질문답변</div>
+        <div>카톡상담</div>
+        <div>전화상담</div>
+    </div>
+    <div class="top-button">
+        <!-- a href 태그에 #을 넣거나 빈란으로 두면 클릭시 화면상단으로 이동 -->
+        <a href="#">top</a>
+    </div>
+    
+
+    </body>
+</html>

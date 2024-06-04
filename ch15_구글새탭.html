@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 탭</title>
+    <style>
+        div {
+            border: 1px solid black;
+            height: 100px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: end;
+
+        }
+
+        .header > div{
+            display: flex;
+            align-items: center;
+
+        }
+
+        .header a{
+            margin: 10px;
+            color: black;
+            text-decoration: none;
+
+        }
+        .header a:hover{
+            text-decoration: underline;
+        }
+
+        .header img{
+            width: 40px;
+            /* radius를 width의 절반만큼 주면 원형이 된다. */
+            border-radius: 20px;
+                        
+        }
+
+        .header img:hover{
+            /* 이미지에 효과주기 */
+            filter: brightness(30%);
+            background-color: #dddddd;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="header">
+            <div>
+                <a href="#"><h3>gmail</h3></a>
+                <a href="#"><h3>이미지</h3></a>
+                <a href="#">
+                    <img  src="https://cdn-icons-png.flaticon.com/512/1124/1124844.png" alt="">
+                </a>
+                <a href="#">
+                    <img  src="https://cdn.iconscout.com/icon/premium/png-256-thumb/menu-1899373-1606812.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
